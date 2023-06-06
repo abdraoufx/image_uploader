@@ -1,0 +1,62 @@
+@use "../layout/colors" as *;
+
+@use "../helpers/mixins" as *;
+
+.uploading-in-prog-box {
+  background-color: $white;
+
+  .title {
+    margin-bottom: 24px;
+
+    & + .loader-container {
+      height: 6px;
+
+      border-radius: 100vmax;
+
+      background-color: $blueish-gray;
+
+      position: relative;
+
+      > span.loader-container__loader {
+        position: absolute;
+
+        background-color: $bold-blue;
+
+        height: 100%;
+        width: 100px;
+
+        border-radius: inherit;
+
+        animation: move-loader 2000ms linear 0ms infinite;
+
+        @include sm-break {
+          width: 40px;
+
+          animation-duration: 1500ms;
+        }
+      }
+    }
+  }
+}
+
+@keyframes move-loader {
+  0% {
+    left: 0;
+    transform: translateX(0%);
+  }
+
+  49% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  51% {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    left: 0;
+    transform: translateX(0%);
+  }
+}

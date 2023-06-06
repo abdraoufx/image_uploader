@@ -1,0 +1,51 @@
+@use "../layout/colors" as *;
+
+.error-box {
+  position: fixed;
+  bottom: 15px;
+  left: -250px; // box width
+
+  background-color: $white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  border-radius: 4px;
+
+  padding: 6px 8px;
+
+  transition: 250ms ease-in-out;
+
+  &.show {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  > {
+    .icon-wrapper {
+      display: flex;
+      align-items: flex-start;
+
+      i {
+        color: $red;
+
+        font-size: 35px;
+
+        cursor: pointer;
+
+        transition: 250ms ease-in;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .text {
+      font-weight: bold;
+
+      text-align: center;
+    }
+  }
+}

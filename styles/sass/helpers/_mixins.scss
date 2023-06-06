@@ -1,0 +1,6 @@
+// Media Breakpoints Mixins
+@mixin sm-break {
+  @media (max-width: 280px) {
+    @content;
+  }
+}

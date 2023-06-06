@@ -1,0 +1,71 @@
+@use "../layout/colors" as *;
+
+nav.stored-imgs-links {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+  height: 100%;
+  width: 90%;
+  max-width: 235px;
+
+  padding: 12px;
+
+  background-color: $light-gray;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  overflow-y: auto;
+
+  transform: translateX(100%);
+
+  transition: 250ms ease-in;
+
+  &.visible {
+    transform: translateX(0%);
+  }
+
+  .no-data {
+    text-align: center;
+    text-transform: capitalize;
+
+    font-weight: bold;
+
+    margin: auto 0;
+  }
+
+  .icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__close-navigation,
+    &__clear-all-links {
+      color: $bold-blue;
+
+      cursor: pointer;
+
+      font-size: 25px;
+
+      transition: 200ms ease-in;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .navigation-elements-container {
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+}

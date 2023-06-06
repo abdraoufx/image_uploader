@@ -1,0 +1,31 @@
+@use "../sass/layout/colors" as *;
+@use "../sass/layout/utilities" as *;
+@use "../sass/layout/normalize" as *;
+
+@use "./pages/upload-box" as *;
+@use "./pages/uploading-in-prog-box" as *;
+@use "./pages/nav" as *;
+@use "./pages/error-box" as *;
+
+.main-page {
+  height: 100%;
+
+  background-color: $med-gray;
+
+  --container-x-padding: 20px;
+
+  padding: 0 var(--container-x-padding);
+
+  .show-links-btn {
+    position: fixed;
+    top: var(--container-x-padding);
+    right: var(--container-x-padding);
+
+    border-radius: 6px !important;
+
+    @media (max-width: 280px) {
+      max-width: 200px;
+      font-size: 13px;
+    }
+  }
+}
