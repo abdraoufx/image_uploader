@@ -6,6 +6,8 @@ This project allows users to upload and store images in a centralized location. 
 [![Uploading In Progress Box](./images/uploading_box.png)](./images/uploading_box.png)
 [![Uploaded Picture](./images/uploaded_picture.png)](./images/uploaded_picture.png)
 
+<a href="https://img-upl.000webhostapp.com/" target="_blank">See Demo</a>
+
 ## Table of Contents
 
 - [Features](#features)
