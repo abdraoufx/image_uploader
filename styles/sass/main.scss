@@ -6,9 +6,10 @@
 @use "./pages/uploading-in-prog-box" as *;
 @use "./pages/nav" as *;
 @use "./pages/error-box" as *;
+@use "./pages/footer" as *;
 
 .main-page {
-  height: 100%;
+  height: calc(100% - 28px); // Footer Height
 
   background-color: $med-gray;
 

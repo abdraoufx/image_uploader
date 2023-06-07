@@ -205,7 +205,11 @@ function setLastUploadTime()
             <span class="text"></span>
         </div>
     </main>
-    <script src="js/main.js" defer></script>
+    <footer class="main-footer">Created by
+        <a class="username" href="https://abdraoufx.netlify.app/" target="_blank">abderaoufx | abderaouf zemmal</a>
+        - devChallenges.io
+    </footer>
+    <script defer src="js/main.js"></script>
 </body>
 
 </html>

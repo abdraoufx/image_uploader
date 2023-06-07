@@ -13,8 +13,11 @@ const REUPLOAD_DELAY_MS = 5000;
 let isUserUploadedImage = false;
 let uploadInProgress = false;
 let waitingBeforeNextUpload = false;
+const navigation = document.querySelector(".stored-imgs-links");
 const shownavigationigationButton = document.querySelector(".show-links-btn");
-shownavigationigationButton === null || shownavigationigationButton === void 0 ? void 0 : shownavigationigationButton.addEventListener("click", () => closeAndOpennavigation(false));
+shownavigationigationButton === null || shownavigationigationButton === void 0 ? void 0 : shownavigationigationButton.addEventListener("click", () => {
+    closeAndOpennavigation(false);
+});
 const chooseFileButton = document.querySelector("#choose-file-btn");
 chooseFileButton === null || chooseFileButton === void 0 ? void 0 : chooseFileButton.addEventListener("click", clickTheInput);
 const uploadInput = document.querySelector("#img-input");
@@ -350,7 +353,6 @@ function createnavigationigationButtons() {
     iconsContainer.append(closenavigationIcon, clearAllLinksIcon);
     navigation === null || navigation === void 0 ? void 0 : navigation.appendChild(iconsContainer);
 }
-const navigation = document.querySelector(".stored-imgs-links");
 const closeAndOpennavigation = (close) => close
     ? navigation === null || navigation === void 0 ? void 0 : navigation.classList.remove("visible")
     : navigation === null || navigation === void 0 ? void 0 : navigation.classList.add("visible");

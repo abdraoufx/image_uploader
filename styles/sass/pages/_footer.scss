@@ -1,0 +1,14 @@
+@use "../layout/colors" as *;
+
+.main-footer {
+  background-color: $med-gray;
+  color: $gray-black;
+
+  text-align: center;
+
+  .username {
+    color: $med-black;
+
+    font-weight: bold;
+  }
+}

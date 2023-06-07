@@ -91,6 +91,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .upload-box-container {
   position: relative;
   background-color: #ffffff;
@@ -348,8 +352,18 @@ nav.stored-imgs-links .navigation-elements-container:last-child {
   text-align: center;
 }
 
+.main-footer {
+  background-color: #fafafb;
+  color: #828282;
+  text-align: center;
+}
+.main-footer .username {
+  color: #4f4f4f;
+  font-weight: bold;
+}
+
 .main-page {
-  height: 100%;
+  height: calc(100% - 28px);
   background-color: #fafafb;
   --container-x-padding: 20px;
   padding: 0 var(--container-x-padding);

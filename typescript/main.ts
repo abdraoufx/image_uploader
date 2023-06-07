@@ -12,12 +12,14 @@ let uploadInProgress: boolean = false;
 
 let waitingBeforeNextUpload: boolean = false;
 
+const navigation = document.querySelector<HTMLElement>(".stored-imgs-links");
+
 const shownavigationigationButton =
   document.querySelector<HTMLButtonElement>(".show-links-btn");
 
-shownavigationigationButton?.addEventListener("click", () =>
-  closeAndOpennavigation(false)
-);
+shownavigationigationButton?.addEventListener("click", () => {
+  closeAndOpennavigation(false);
+});
 
 const chooseFileButton =
   document.querySelector<HTMLButtonElement>("#choose-file-btn");
@@ -538,8 +540,6 @@ function createnavigationigationButtons(): void {
 
   navigation?.appendChild(iconsContainer);
 }
-
-const navigation = document.querySelector<HTMLElement>(".stored-imgs-links");
 
 const closeAndOpennavigation = (close: boolean): void =>
   close
